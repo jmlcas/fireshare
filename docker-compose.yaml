@@ -1,10 +1,8 @@
-version: "3.3"
-
 services:
 
   fireshare:
-    container_name: fireshare
     image: shaneisrael/fireshare:latest
+    container_name: fireshare   
     ports:
       - "8200:80"
     volumes:
@@ -17,6 +15,5 @@ services:
       - SECRET_KEY=reemplazar_esto_con_alguna_cadena_aleatoria
       - MINUTES_BETWEEN_VIDEO_SCANS=5
       - PUID=1000
-      - PGID=1000
+      - PGID=1000     
 
-      
